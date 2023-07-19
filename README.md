@@ -12,7 +12,7 @@ Features
 
 Requirements
 
-    Python 3.x
+    Python 3.11 or others, but remember to download the dlib file.
     OpenCV
     Face Recognition Library
     Tesseract OCR Engine
@@ -32,13 +32,13 @@ Usage
     Prepare a sample image with a vehicle number plate for testing number plate recognition.
     Run the code: python main.py
     The system will display the recognized name and number plate information.
-    If the face is recognized, the gate will open for a specified duration.
-    The entry details will be logged in the Google Sheet.
+    The gate will open for a specified duration if the face is recognised.
+    The entry details will be logged in the Google Sheets.
 
 Performance
 
     Face Recognition: 100% accuracy in recognizing known individuals.
-    Number Plate Recognition: 67% accuracy, can be further optimized for improved performance.
+    Number Plate Recognition: 67% accuracy can be further optimized for improved performance.
     Overall System Accuracy: 89%, showing promising results.
 
 Contributing
@@ -47,9 +47,17 @@ Contributions are welcome! If you find any issues or want to enhance the system,
 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
-Acknowledgments
+Acknowledgements
 
     Face Recognition Library
     Tesseract OCR Engine
     Google Sheets API
 
+
+
+#Circuit Diagram for Gate: 
+ Components Name   Arduino Pin 
+   IR Sensor      Digital Pin 11
+   Servo Motor    Digital Pin 8
+   VCC            5V/3.3V
+   Ground         GND
